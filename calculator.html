@@ -9,10 +9,10 @@
 </head>
 <body>
     
-  <nav class="navbar has-background-info">
+<nav class="navbar has-background-info">
   <div class="navbar-brand">
-    <a class="navbar-item is-info" href="#">
-      <h1>電卓アプリ<h1>
+    <a class="navbar-item" href="#">
+      電卓アプリ
     </a>
   </div>
 </nav>
@@ -24,13 +24,13 @@
     
     <div class="field">
       <div class="control">
-        <input type="text" class="input" name="text" value="0">
+        <input type="text" class="input has-text-right" name="text" value="0">
       </div>
     </div>
       
-    <div class="columns is-mobile is-multiline">
+    <div class="columns is-mobile">
       <div class="column">
-        <a class="button is-danger is-fullwidth">C</a>
+        <input type="button" class="button is-danger is-fullwidth" value="C" onClick="calc('C')">
       </div>
       <div class="column">
         <a class="button is-fullwidth"></a>
