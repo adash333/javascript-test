@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <h1 class="title is-size-2">
+        おみくじアプリ
+      </h1>
+      <h2 class="subtitle is-size-4">
+        My first website with <strong>Javascript</strong>!
+      </h2>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <p class="button is-info is-fullwidth" onClick="random()">占ってみよう！</p>
+    </div>
+    <div class="box has-text-centered">
+      <button id="omikuji" class="button is-danger has-text-centered is-outlined" onClick="random()">結果</button>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        このサイトは<a href="https://bulma.io">Bulma</a>を利用しています。
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function random() {
+    let rand = Math.floor( Math.random() * 5) ; //おみくじの目の生成
+      if (rand == 0) msg = "大吉";
+      if (rand == 1) msg = "中吉";
+      if (rand == 2) msg = "小吉";
+      if (rand == 3) msg = "吉";
+      if (rand == 4) msg = "凶";
+    document.getElementById("omikuji").innerHTML = msg; //おみくじの目の出力
+    }
+  </script>
+
+</body>
+</html>
