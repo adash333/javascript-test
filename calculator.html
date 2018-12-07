@@ -9,26 +9,57 @@
 </head>
 <body>
     
-  <section class="hero is-primary is-bold">
-    <div class="hero-body">
-      <h1 class="title is-size-2">
-        電卓アプリ
-      </h1>
-    </div>
-  </section>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item is-info" href="#">
+      <h1>電卓アプリ<h1>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+  
   
   <section class="section">
     <div class="container">
+      
+    <div class="box cta">
+      <div class="field">
+  <div class="control">
+    <input id="calcForm" class="input" type="text" placeholder="計算結果">
+  </div>
+</div>
+    </div>
+      
+    <div class="columns is-mobile is-multiline">
+      <div class="column">
+        <a class="button is-danger is-fullwidth">C</a>
+      </div>
+      <div class="column">
+        <a class="button is-fullwidth"></a>
+      </div>
+      <div class="column">
+        <a class="button is-fullwidth"></a>
+      </div>
+      <div class="column">
+        <a class="button is-info is-fullwidth">+</a>
+      </div>
+    </div>
+    
       
     <div class="columns is-mobile is-multiline">
       <div class="column">
         <a class="button is-primary is-fullwidth">7</a>
       </div>
       <div class="column">
-        <a class="button is-success is-fullwidth">8</a>
+        <a class="button is-primary is-fullwidth">8</a>
       </div>
       <div class="column">
-        <a class="button is-warning is-fullwidth">9</a>
+        <a class="button is-primary is-fullwidth">9</a>
       </div>
       <div class="column">
         <a class="button is-info is-fullwidth">-</a>
@@ -40,10 +71,10 @@
         <a class="button is-primary is-fullwidth">4</a>
       </div>
       <div class="column">
-        <a class="button is-success is-fullwidth">5</a>
+        <a class="button is-primary is-fullwidth">5</a>
       </div>
       <div class="column">
-        <a class="button is-warning is-fullwidth">6</a>
+        <a class="button is-primary is-fullwidth">6</a>
       </div>
       <div class="column">
         <a class="button is-info is-fullwidth">×</a>
