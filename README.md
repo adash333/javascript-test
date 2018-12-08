@@ -32,6 +32,8 @@ original code from https://algorithm.joho.info/programming/javascript/simple-cal
 
 ## todo.html
 
+TODOアプリ
+
 https://adash333.github.io/javascript-test/todo.html
 
 http://i-doctor.sakura.ne.jp/web/doku.php?id=05.javascriptでtodoアプリ:index.html
