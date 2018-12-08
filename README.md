@@ -5,6 +5,7 @@ Javascriptの練習経過です。CSSフレームワークはBulmaを利用し�
 解説サイト:http://i-doctor.sakura.ne.jp/web/
 
 ## 開発環境
+
 Windows 8.1 Pro  
 Chrome  
 VisualStudioCode
@@ -29,5 +30,10 @@ http://i-doctor.sakura.ne.jp/web/doku.php?id=04.javascriptで電卓アプリ:ind
 
 original code from https://algorithm.joho.info/programming/javascript/simple-calculator/
 
+## todo.html
 
+https://adash333.github.io/javascript-test/todo.html
 
+http://i-doctor.sakura.ne.jp/web/doku.php?id=05.javascriptでtodoアプリ:index.html
+
+original code from https://code-maven.com/todo-in-html-and-javascript
