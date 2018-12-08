@@ -1,6 +1,6 @@
 # javascript-test
 
-初めてのJavascriptの練習経過です。
+Javascriptの練習経過です。CSSフレームワークはBulmaを利用しています。
 
 解説サイト:http://i-doctor.sakura.ne.jp/web/
 
