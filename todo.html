@@ -7,28 +7,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <style>
+    .container {
+      margin: 0 auto;
+      max-width: 480px;
+    }
   </style>
 </head>
 <body>
-    
-  <section class="section">
-    <div class="container">
-      <nav class="panel">
-        <p class="panel-heading has-background-primary has-text-white">
-          TODO
-        </p>
 
-        <div class="panel-block">
-          <div class="field has-addons">
-            <div class="control">
-              <input id="task" class="input" type="text" placeholder="すること">
-            </div>
-            <div class="control">
-              <a id="add" class="button is-info">追加</a>
-            </div>
-          </div>
-        </div>
-        
+  <nav class="navbar has-background-info">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-white" href="#">
+        TODO
+      </a>
+    </div>
+  </nav>
+  
+  <section class="section">
+    <div  class="container">
+      <div class="field is-grouped">
+        <p class="control is-expanded">
+          <input id="task" class="input" type="text" placeholder="すること">
+        </p>
+        <p class="control">
+          <a id="add" class="button is-primary">追加</a>
+        </p>
+      </div>
+      <nav class="panel">
         <div id="todos"></div>
       </nav>
     </div>
