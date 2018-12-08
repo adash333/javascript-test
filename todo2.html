@@ -16,7 +16,7 @@
       
       
   <nav class="panel">
-  <p class="panel-heading has-background-primary ">
+  <p class="panel-heading has-background-primary has-text-white">
     ToDo
   </p>
   <div class="panel-block">
@@ -31,25 +31,9 @@
         </div>
       </div>
   </div>
- 
-  <a class="panel-block is-active">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-  </a>
+    
   <div id="todos"></div>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    marksheet
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    minireset.css
-  </a>
+  
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-trash-alt" aria-hidden="true"></i>
@@ -104,7 +88,7 @@ function show() {
  
     var html = '';
     for(var i=0; i<todos.length; i++) {
-        html += '<a class="panel-block"><span class="panel-icon"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>' + todos[i] + '<button class="remove" id="' + i  + '">x</button></a>';
+        html += '<a class="panel-block"><span class="panel-icon"><i class="fas fa-trash-alt remove" id="' + i  + '" aria-hidden="true"></i></span>' + todos[i] + '</a>';
     };
     html += '';
  
