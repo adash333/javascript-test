@@ -14,14 +14,25 @@
   <nav class="navbar has-background-info">
     <div class="navbar-brand">
       <a class="navbar-item has-text-white" href="#">
-        Bulmaテンプレート
+        ToDoアプリ
       </a>
     </div>
   </nav>
     
   <section class="section">
     <div class="container">
-      <!-- ここにコンテンツを記載 -->
+        <div class="field has-addons">
+        <div class="control">
+          <input id="task" class="input" type="text" placeholder="すること">
+        </div>
+        <div class="control">
+          <a id="add" class="button is-info">
+            追加
+          </a>
+        </div>
+      </div>
+      <hr class="hr">
+      <div id="todos"></div>
     </div>
   </section>
 
