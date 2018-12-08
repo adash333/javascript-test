@@ -36,8 +36,8 @@
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
-    <div id="todos"></div>
   </a>
+  <div id="todos"></div>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
+      <i class="fas fa-trash-alt" aria-hidden="true"></i>
     </span>
     jgthms.github.io
   </a>
@@ -102,11 +102,11 @@ function remove() {
 function show() {
     var todos = get_todos();
  
-    var html = '<ul>';
+    var html = '';
     for(var i=0; i<todos.length; i++) {
-        html += '<li>' + todos[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<a class="panel-block"><span class="panel-icon"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>' + todos[i] + '<button class="remove" id="' + i  + '">x</button></a>';
     };
-    html += '</ul>';
+    html += '';
  
     document.getElementById('todos').innerHTML = html;
  
