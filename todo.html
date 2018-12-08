@@ -13,82 +13,50 @@
     
   <section class="section">
     <div class="container">
-      
-      
-  <nav class="panel">
-  <p class="panel-heading has-background-primary ">
-    ToDo
-  </p>
-  <div class="panel-block">
-      <div class="field has-addons">
-        <div class="control">
-          <input id="task" class="input" type="text" placeholder="すること">
+      <nav class="panel">
+        <p class="panel-heading has-background-primary has-text-white">
+          TODO
+        </p>
+
+        <div class="panel-block">
+          <div class="field has-addons">
+            <div class="control">
+              <input id="task" class="input" type="text" placeholder="すること">
+            </div>
+            <div class="control">
+              <a id="add" class="button is-info">追加</a>
+            </div>
+          </div>
         </div>
-        <div class="control">
-          <a id="add" class="button is-info">
-            追加
-          </a>
-        </div>
-      </div>
-  </div>
- 
-  <a class="panel-block is-active">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    <div id="todos"></div>
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    marksheet
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    minireset.css
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fas fa-book" aria-hidden="true"></i>
-    </span>
-    jgthms.github.io
-  </a>
-  
-  </div>
-</nav>
-    
-    
-      
+        
+        <div id="todos"></div>
+      </nav>
     </div>
   </section>
 
   <script>
-    
-    function get_todos() {
+  function get_todos() {
     var todos = new Array;
     var todos_str = localStorage.getItem('todo');
     if (todos_str !== null) {
         todos = JSON.parse(todos_str); 
     }
     return todos;
-}
+  }
  
-function add() {
+  function add() {
     var task = document.getElementById('task').value;
  
     var todos = get_todos();
     todos.push(task);
     localStorage.setItem('todo', JSON.stringify(todos));
- 
+
     show();
  
     return false;
-}
+  }
  
-function remove() {
+  function remove() {
     var id = this.getAttribute('id');
     var todos = get_todos();
     todos.splice(id, 1);
@@ -97,29 +65,28 @@ function remove() {
     show();
  
     return false;
-}
+  }
  
-function show() {
+  function show() {
     var todos = get_todos();
  
-    var html = '<ul>';
+    var html = '';
     for(var i=0; i<todos.length; i++) {
-        html += '<li>' + todos[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<a class="panel-block"><span class="panel-icon remove" id="' + i  + '"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>' + todos[i] + '</a>';
     };
-    html += '</ul>';
+    html += '';
  
     document.getElementById('todos').innerHTML = html;
+    document.getElementById('task').value ="";
  
     var buttons = document.getElementsByClassName('remove');
     for (var i=0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', remove);
     };
-}
+  }
  
-document.getElementById('add').addEventListener('click', add);
-show();
-    
-    
+  document.getElementById('add').addEventListener('click', add);
+  show();
   </script>
 
 </body>
