@@ -50,7 +50,7 @@
     <script>
         'use strict';
         //Firebaseの初期化
-        firebase.initializeApp({databaseURL: "https://<YOUR DATABASE NAME>.firebaseio.com"});
+        firebase.initializeApp({databaseURL: "https://ionic3-quiz.firebaseio.com"});
         const database = firebase.database();
         const ref = database.ref('messages');
         let last_message = "dummy";
